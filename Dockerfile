@@ -36,8 +36,8 @@ RUN cd /usr/src \
     && make INSTALL_TOP=/opt/lua${LUA_VERSION_SHORT} install
 
 ENV HAPROXY_MAJOR 1.7
-ENV HAPROXY_VERSION 1.7.2
-ENV HAPROXY_MD5 7330b36f3764ebe409e9305803dc30e2
+ENV HAPROXY_VERSION 1.7.10
+ENV HAPROXY_MD5 a9b98a228660dee5ee65b62e3bd57822
 
 
 RUN cd / && curl -SL "http://www.haproxy.org/download/${HAPROXY_MAJOR}/src/haproxy-${HAPROXY_VERSION}.tar.gz" -o haproxy.tar.gz \
